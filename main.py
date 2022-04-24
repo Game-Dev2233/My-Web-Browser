@@ -52,7 +52,7 @@ class Window(QMainWindow):
 
 		Github = QAction("Github", self)
 		Github.setStatusTip("Go to Github website")
-		Github.triggered.connect(lambda: self.go_to_URL(QUrl("https://Github.com")))
+		Github.triggered.connect(lambda: self.go_to_URL(QUrl("https://github.com/Game-Dev2233/My-Web-Browser/")))
 		bookmarks_toolbar.addAction(Github)
 
 		Youtube = QAction("Youtube", self)
@@ -65,20 +65,20 @@ class Window(QMainWindow):
 		Netflix.triggered.connect(lambda: self.go_to_URL(QUrl("https://www.Netflix.com")))
 		bookmarks_toolbar.addAction(Netflix)
 
-		bitnations = QAction("BitNations", self)
-		bitnations.setStatusTip("Go to bitnations")
-		bitnations.triggered.connect(lambda: self.go_to_URL(QUrl("https://www.bitnations.co")))
-		bookmarks_toolbar.addAction(bitnations)
+		YoutubeM = QAction("Youtube Music", self)
+		YoutubeM.setStatusTip("Go to Youtube Music")
+		YoutubeM.triggered.connect(lambda: self.go_to_URL(QUrl("https://music.youtube.com/")))
+		bookmarks_toolbar.addAction(YoutubeM)
 
-		Code = QAction("Code.org", self)
-		Code.setStatusTip('Go to Code.org')
-		Code.triggered.connect(lambda: self.go_to_URL(QUrl("https://www.Code.org")))
-		bookmarks_toolbar.addAction(Code)
+		StackO = QAction("Stack Overflow", self)
+		StackO.setStatusTip('Go to Stack Overflow')
+		StackO.triggered.connect(lambda: self.go_to_URL(QUrl("https://stackoverflow.com/")))
+		bookmarks_toolbar.addAction(StackO)
 
-		Mine = QAction("Minecraft Classic", self)
-		Mine.setStatusTip('Minecraft Classic')
-		Mine.triggered.connect(lambda: self.go_to_URL(QUrl("https://www.Classic.minecraft.net")))
-		bookmarks_toolbar.addAction(Mine)
+		BakeBook = QAction("BakeBook", self)
+		BakeBook.setStatusTip('BakeBook')
+		BakeBook.triggered.connect(lambda: self.go_to_URL(QUrl("https://88oewp.wixsite.com/bakebook")))
+		bookmarks_toolbar.addAction(BakeBook)
 
 		self.browser.maximumSize()
 		self.show()
